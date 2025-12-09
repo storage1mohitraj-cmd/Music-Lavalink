@@ -5,8 +5,8 @@ WORKDIR /opt/Lavalink
 # Install curl for health check
 RUN apk add --no-cache curl
 
-# Download Lavalink v4 (latest stable)
-ADD https://github.com/lavalink-devs/Lavalink/releases/download/4.0.8/Lavalink.jar Lavalink.jar
+# Download Lavalink v4.0.9 (includes YouTube fixes)
+ADD https://github.com/lavalink-devs/Lavalink/releases/download/4.0.9/Lavalink.jar Lavalink.jar
 
 # Copy configuration
 COPY application.yml application.yml
