@@ -1,0 +1,9 @@
+# Ignore logs
+logs/
+*.log
+
+# Ignore downloaded Lavalink jar (will be downloaded during build)
+Lavalink.jar
+
+# Ignore local config overrides
+application.local.yml
