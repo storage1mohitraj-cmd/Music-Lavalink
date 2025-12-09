@@ -1,0 +1,20 @@
+app = "lavalink"
+primary_region = "sin"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  LAVALINK_SERVER_PASSWORD = "youshallnotpass"
+
+[http_service]
+  internal_port = 2333
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 1
+
+[[vm]]
+  memory = '512mb'
+  cpu_kind = 'shared'
+  cpus = 1

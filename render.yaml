@@ -1,0 +1,10 @@
+version: 1
+services:
+  - type: web
+    name: lavalink
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: LAVALINK_SERVER_PASSWORD
+        generateValue: true
+    plan: free
